@@ -70,7 +70,7 @@ public class Task01
                 // put offset into offset ArrayList.
                 offsets.add(tempOffset);
                 // set the tempOffset to the end of the pattern
-                tempOffset += "hard".length();
+                tempOffset += pattern.length();
                 // remove that pattern in next search.
                 data = data.substring(tempOffset, data.length());
             }
@@ -107,7 +107,7 @@ public class Task01
                 // put offset into offset ArrayList.
                 offsets.add(tempOffset);
                 // set the tempOffset to the end of the pattern
-                tempOffset += "hard".length();
+                tempOffset += pattern.length();
                 // remove that pattern in next search.
                 data = data.substring(tempOffset, data.length());
             }
@@ -146,7 +146,7 @@ public class Task01
                 // put offset into offset ArrayList.
                 offsets.add(tempOffset);
                 // set the tempOffset to the end of the pattern
-                tempOffset += "hard".length();
+                tempOffset += pattern.length();
                 // remove that pattern in next search.
                 data = data.substring(tempOffset, data.length());
             }
@@ -182,7 +182,7 @@ public class Task01
         }
         endTime = System.nanoTime();
         time = (endTime - startTime) / 100;
-        System.out.println("Brute Force Match Search Pattern" + pat + " Time: " + time);
+        System.out.println("Brute Force Match Search Pattern " + pat + " Time: " + time);
         System.out.println(offsets);
 
         // boyerMooreSearch
@@ -193,7 +193,7 @@ public class Task01
         }
         endTime = System.nanoTime();
         time = (endTime - startTime) / 100;
-        System.out.println("Boyer Moore Search Pattern" + pat + " Time: " + time);
+        System.out.println("Boyer Moore Search Pattern " + pat + " Time: " + time);
         System.out.println(offsets);
 
         // KMPSearch
@@ -204,7 +204,7 @@ public class Task01
         }
         endTime = System.nanoTime();
         time = (endTime - startTime) / 100;
-        System.out.println("KMP Search Pattern" + pat + " Time: " + time);
+        System.out.println("KMP Search Pattern " + pat + " Time: " + time);
         System.out.println(offsets);
     }
 }
