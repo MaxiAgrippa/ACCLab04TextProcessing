@@ -169,6 +169,7 @@ public class Task01
 
     public static void eachCasePrint (String pat)
     {
+        System.out.println("Search for pattern: " + pat);
         Task01 task01 = new Task01();
         ArrayList<Integer> offsets = new ArrayList<Integer>();
         long startTime = 0;
