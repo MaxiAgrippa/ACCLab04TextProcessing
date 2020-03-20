@@ -34,7 +34,7 @@ public class Task03
     private Pattern phoneNumberPattern02 = Pattern.compile("\\d{10}");
     private Pattern phoneNumberPattern03 = Pattern.compile("\\d{11}");
     private Pattern emailAddressePattern = Pattern.compile("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}");
-    private Pattern URLPattern = Pattern.compile("(?:^|[\\W])" + "(((http|https|ftp|file):(\\/\\/)?))" + "(([\\w\\-\\_%]+(@))?)" + "(([\\w\\-\\_%]+\\.)+)" + "([\\w\\-\\_%]+)" + "((:[\\d]{2,5})?)" + "((\\/[\\w\\-\\_\\%]+)*)" + "((\\/(#|\\?)[\\w\\-\\.\\_\\~\\:\\/\\?\\#\\[\\]\\@\\!\\$\\&\\'\\(\\)\\*\\+\\,\\;\\=\\.]+)?)", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE | Pattern.DOTALL);
+    private Pattern URLPattern = Pattern.compile("(?:^|[\\W])" + "(((http|https|ftp|file):(\\/\\/)?))" + "(([\\w\\-\\_%]+(@))?)" + "(([\\w\\-\\_%]+\\.)+)" + "([\\w\\-\\_%]+)" + "((:[\\d]{2,5})?)" + "(\\/)" + "((\\/[\\w\\-\\_\\%]+)*)" + "((\\/(#|\\?)[\\w\\-\\.\\_\\~\\:\\/\\?\\#\\[\\]\\@\\!\\$\\&\\'\\(\\)\\*\\+\\,\\;\\=\\.]+)?)", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE | Pattern.DOTALL);
 
     public Task03 ()
     {
